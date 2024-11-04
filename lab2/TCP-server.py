@@ -19,7 +19,7 @@ def tcp_server(host='127.0.0.1', port=8080):
                 if not data:
                     break
                 print(f"Получено сообщение: {data.decode()}")
-                # Отправляем данные обратно (echo)
+                # Отправляем данные обратно
                 conn.sendall(data)
 
 if __name__ == "__main__":

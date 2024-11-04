@@ -11,7 +11,7 @@ def udp_server(host='127.0.0.1', port=5000):
             # Ожидаем данных от клиента
             data, addr = server_socket.recvfrom(1024)
             print(f"Получено сообщение от {addr}: {data.decode()}")
-            # Отправляем данные обратно (echo)
+            # Отправляем данные обратно
             server_socket.sendto(data, addr)
 
 if __name__ == "__main__":

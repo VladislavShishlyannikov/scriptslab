@@ -1,7 +1,7 @@
 import socket
 
 def udp_client(message, host='127.0.0.1', port=5000):
-    # Создаем UDP-сокет
+    # Создание UDP-сокета
     with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as client_socket:
         # Отправляем сообщение на сервер
         client_socket.sendto(message.encode(), (host, port))
