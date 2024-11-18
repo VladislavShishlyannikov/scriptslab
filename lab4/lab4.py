@@ -1,5 +1,3 @@
-# Запуск через консоль командой python lab4.py
-
 import os
 import sys
 from PyQt5.QtWidgets import (
